@@ -11,7 +11,8 @@ form.addEventListener('submit', function (event) {
   const departamento = document.getElementById('departamento').value;
   const selectedOption = document.querySelector('.image-option input[type="radio"]:checked');
   const imagemSelecionada = selectedOption.value;
-
+  const qrCode = document.getElementById('qrcode').value;
+  
   const originalCanvas = document.createElement('canvas');
   const originalContext = originalCanvas.getContext('2d');
   const image = new Image();
