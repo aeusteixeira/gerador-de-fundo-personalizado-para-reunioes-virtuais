@@ -1,5 +1,7 @@
 # Gerador de Fundo do Background do Teams
 
+![Background padrão](https://raw.githubusercontent.com/aeusteixeira/gerador-de-fundo-personalizado-para-reunioes-virtuais/master/img/background.jpg)
+
 Este é um projeto simples que consiste em uma aplicação web para gerar o fundo do background da câmera do Microsoft Teams, Google Meet ou Zoom. A aplicação permite que os usuários insiram seu nome e departamento e uma ação que irá gerar um QR Code visivel, e visualize como o fundo ficará na imagem padrão de background. Além disso, eles podem fazer o download do fundo gerado.
 
 ## Funcionalidades
