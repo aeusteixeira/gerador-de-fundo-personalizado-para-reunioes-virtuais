@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gerador de Fundo do Background do Teams</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1>Gerador de Fundo do Background</h1>
+                <p class="lead">
+                    Crie um fundo moderno e personalizado para usar no Microsoft Teams da sua empresa.
+                </p>
+                <hr>
+                <form id="gerador-form">
+                    <div class="mb-3">
+                        <label for="background" class="form-label">Selecione o Fundo:</label>
+                        <div id="background-select">
+                            <!-- Adicione os seus fundos aqui. Cada input deve ter um ID único e o value deve ser o caminho para a imagem. -->
+                            <div class="image-option">
+                                <input type="radio" id="background_1" name="background" value="img/backgrounds/background_1.jpg" checked>
+                                <label for="background_1">
+                                    <img src="img/backgrounds/background_1_thumb.jpg" alt="Background 1">
+                                </label>
+                            </div>
+                            <div class="image-option">
+                                <input type="radio" id="background_2" name="background" value="img/backgrounds/background_2.jpg" checked>
+                                <label for="background_2">
+                                    <img src="img/backgrounds/background_2_thumb.jpg" alt="Background 2">
+                                </label>
+                            </div>
+                            <div class="image-option">
+                                <input type="radio" id="background_3" name="background" value="img/backgrounds/background_3.jpg" checked>
+                                <label for="background_3">
+                                    <img src="img/backgrounds/background_3_thumb.jpg" alt="Background 3">
+                                </label>
+                            </div>
+                            <div class="image-option">
+                                <input type="radio" id="background_4" name="background" value="img/backgrounds/background_4.jpg" checked>
+                                <label for="background_4">
+                                    <img src="img/backgrounds/background_4_thumb.jpg" alt="Background 4">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="mb-3">
+                        <label for="logo" class="form-label">Logo da Empresa:</label>
+                        <input type="file" class="form-control" id="logo" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome" required placeholder="Ex: Matheus Teixeira">
+                    </div>
+                    <div class="mb-3">
+                        <label for="departamento" class="form-label">Seu Título:</label>
+                        <input type="text" class="form-control" id="departamento" required
+                            placeholder="Ex: Desenvolvedor Front-End">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gerar Fundo</button>
+                    <hr>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-link p-0 text-light" data-bs-toggle="modal"
+                        data-bs-target="#precisoDeAjuda">
+                        Precisa de ajuda?
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="precisoDeAjuda" tabindex="-1" aria-labelledby="precisoDeAjudaLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="precisoDeAjudaLabel">
+                                        Como baixar e instalar o seu novo fundo do Teams
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark">
+                                    <ol>
+                                        <li>
+                                            Após preencher o seu nome e departamento, clique em <b>Gerar Fundo</b>.
+                                        </li>
+                                        <li>
+                                            Aguarde até que a imagem seja gerada e o download inicie.
+                                        </li>
+                                        <li>
+                                            Acesse o Microsoft Teams e faça login em sua conta.
+                                        </li>
+                                        <li>
+                                            No aplicativo Teams, clique no seu perfil no canto superior direito e
+                                            selecione "<b>Configurações</b>".
+                                        </li>
+                                        <li>
+                                            Na guia "<b>Geral</b>", role para baixo até a seção "<b>Fundo</b>" e clique
+                                            em "<b>Adicionar</b>" para adicionar um novo fundo.
+                                        </li>
+                                        <li>
+                                            Selecione a imagem que você baixou anteriormente em seu computador e clique
+                                            em "<b>Abrir</b>".
+                                        </li>
+                                        <li>
+                                            8guarde enquanto o Teams carrega e aplica o novo fundo. Você pode visualizar
+                                            o fundo selecionado antes de aplicá-lo.
+                                        </li>
+                                        <li>
+                                            9Uma vez que o novo fundo tenha sido aplicado com sucesso, clique em
+                                            "<b>Salvar</b>" para salvar suas alterações.
+                                        </li>
+                                        <li>
+                                            Pronto! Agora você tem um novo fundo personalizado para usar no Microsoft
+                                            Teams.
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendi,
+                                        obrigado</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-header text-center">
+                        www.bpoinnova.com
+                    </div>
+                    <div class="card-body">
+                        <div id="preview">
+                            <video autoplay loop class="img-fluid">
+                                <source src="img/video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="overlay-text" id="nome-text"></div>
+                            <div class="overlay-text" id="departamento-text"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="resultado"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
