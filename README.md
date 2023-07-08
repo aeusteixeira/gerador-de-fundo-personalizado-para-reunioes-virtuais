@@ -1,9 +1,9 @@
 # Gerador de Fundo do Background do Teams
 
-Este é um projeto simples que consiste em uma aplicação web para gerar o fundo do background da câmera do Microsoft Teams. A aplicação permite que os usuários insiram seu nome e departamento, e visualize como o fundo ficará na imagem padrão de background. Além disso, eles podem fazer o download do fundo gerado.
+Este é um projeto simples que consiste em uma aplicação web para gerar o fundo do background da câmera do Microsoft Teams, Google Meet ou Zoom. A aplicação permite que os usuários insiram seu nome e departamento e uma ação que irá gerar um QR Code visivel, e visualize como o fundo ficará na imagem padrão de background. Além disso, eles podem fazer o download do fundo gerado.
 
 ## Funcionalidades
-- Inserir nome e departamento
+- Inserir nome, departamento e ação para QR Code
 - Visualizar o fundo do background com as informações inseridas
 - Fazer o download do fundo gerado
 
@@ -21,6 +21,7 @@ Este é um projeto simples que consiste em uma aplicação web para gerar o fund
 - Abra o arquivo index.html em um navegador web.
 - Preencha o campo "Nome" com o seu nome.
 - Preencha o campo "Departamento" com o nome do seu departamento.
+- Preencha o campo "QR Code" com o link de ação para o QR Code.
 - Clique no botão "Gerar Fundo".
 - Será exibido um preview do fundo do background com as informações inseridas.
 - Clique no link "Baixar Fundo" para fazer o download da imagem gerada.
