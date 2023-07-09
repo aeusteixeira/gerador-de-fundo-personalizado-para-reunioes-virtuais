@@ -43,36 +43,6 @@
                 <hr>
                 <form id="gerador-form">
                     <div class="mb-3">
-                        <label for="background" class="form-label">Selecione o Fundo:</label>
-                        <div id="background-select">
-                            <div class="image-option">
-                                <input type="radio" id="background_1" name="background" value="img/backgrounds/background_1.jpg" checked>
-                                <label for="background_1">
-                                    <img src="img/backgrounds/background_1_thumb.jpg" alt="Background 1">
-                                </label>
-                            </div>
-                            <div class="image-option">
-                                <input type="radio" id="background_2" name="background" value="img/backgrounds/background_2.jpg" checked>
-                                <label for="background_2">
-                                    <img src="img/backgrounds/background_2_thumb.jpg" alt="Background 2">
-                                </label>
-                            </div>
-                            <div class="image-option">
-                                <input type="radio" id="background_3" name="background" value="img/backgrounds/background_3.jpg" checked>
-                                <label for="background_3">
-                                    <img src="img/backgrounds/background_3_thumb.jpg" alt="Background 3">
-                                </label>
-                            </div>
-                            <div class="image-option">
-                                <input type="radio" id="background_4" name="background" value="img/backgrounds/background_4.jpg" checked>
-                                <label for="background_4">
-                                    <img src="img/backgrounds/background_4_thumb.jpg" alt="Background 4">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
                         <label for="nome" class="form-label">Nome:</label>
                         <input type="text" class="form-control" id="nome" required placeholder="Ex: Matheus Teixeira">
                     </div>
@@ -160,7 +130,7 @@
             <div class="col-md-8">
                 <div class="card shadow">
                     <div class="card-header text-center">
-                        www.bpoinnova.com
+                        www.geradordefundo.com.br
                     </div>
                     <div class="card-body">
                         <div id="preview">
@@ -169,11 +139,41 @@
                                 Your browser does not support the video tag.
                             </video>
                             <div class="overlay-text" id="nome-text"></div>
-                            <div class="overlay-text" id="departamento-text"></div>
+                            <div class="overlay-text" id="nome-text"></div>
+                            <div class="overlay-text" id="qrcode-preview"></div>
                         </div>
                     </div>
                     <div class="card-footer">
 
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="background" class="form-label">Selecione o Fundo:</label>
+                    <div id="background-select">
+                        <div class="image-option">
+                            <input type="radio" id="background_1" name="background" value="img/backgrounds/background_1.jpg" checked>
+                            <label for="background_1">
+                                <img src="img/backgrounds/background_1_thumb.jpg" alt="Background 1">
+                            </label>
+                        </div>
+                        <div class="image-option">
+                            <input type="radio" id="background_2" name="background" value="img/backgrounds/background_2.jpg" checked>
+                            <label for="background_2">
+                                <img src="img/backgrounds/background_2_thumb.jpg" alt="Background 2">
+                            </label>
+                        </div>
+                        <div class="image-option">
+                            <input type="radio" id="background_3" name="background" value="img/backgrounds/background_3.jpg" checked>
+                            <label for="background_3">
+                                <img src="img/backgrounds/background_3_thumb.jpg" alt="Background 3">
+                            </label>
+                        </div>
+                        <div class="image-option">
+                            <input type="radio" id="background_4" name="background" value="img/backgrounds/background_4.jpg" checked>
+                            <label for="background_4">
+                                <img src="img/backgrounds/background_4_thumb.jpg" alt="Background 4">
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
