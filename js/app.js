@@ -13,7 +13,7 @@ form.addEventListener('submit', function (event) {
   const selectedOption = document.querySelector('.image-option input[type="radio"]:checked');
   const imagemSelecionada = selectedOption.value;
   const logo = document.getElementById('logo').value;
-  const qrCode = document.getElementById('qrcode').value;
+  const qrCodeText = document.getElementById('qrcode').value;
   
   const originalCanvas = document.createElement('canvas');
   const originalContext = originalCanvas.getContext('2d');
@@ -45,19 +45,16 @@ form.addEventListener('submit', function (event) {
     originalContext.textAlign = 'center';
     originalContext.fillText(departamento, departamentoX, departamentoY);
 
-    // Logo
-    const logoImage = new Image();
-    logoImage.src = logo;
-    logoImage.onload = function () {
-      originalContext.drawImage(logoImage, logoX, logoY, 100, 100);
-    };
+    // Gera o logo e adiciona ao canvas
+    const qrCodeImage = new QRCode(qrCodePreview, {
+      text: qrCodeText,
+      width: 128,
+      height: 128
+    });
 
-    // QR Code
-    const qrCodeImage = new Image();
-    qrCodeImage.src = qrCode;
-    qrCodeImage.onload = function () {
-      originalContext.drawImage(qrCodeImage, qrCodeX, qrCodeY, 100, 100);
-    };
+    const qrCode = qrCodePreview.querySelector('img');
+    originalContext.drawImage(qrCode, qrCodeX, qrCodeY);
+    
     
 
     previewDiv.innerHTML = '';
@@ -75,7 +72,7 @@ form.addEventListener('submit', function (event) {
     const link = document.createElement('a');
     link.href = tempCanvas.toDataURL('image/png');
     link.download = 'background_teams.png';
-    link.click();
+    //link.click();
   };
 });
 
